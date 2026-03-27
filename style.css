@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header, section, footer {
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+ /* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #444;
+  color: #fff;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background: #eee;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* About */
+.about {
+  background: #f9f9f9;
+}
+
+/* Gallery */
+.gallery .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.card {
+  background: #ddd;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  background: #444;
+  color: #fff;
+  text-align: center;
+}
+
+/* Responsive Layouts */
+@media (min-width: 600px) {
+  /* Tablet: 2 columns in gallery */
+  .gallery .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Desktop: 3-4 columns in gallery */
+  .gallery .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
